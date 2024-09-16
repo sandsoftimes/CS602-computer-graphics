@@ -1,0 +1,218 @@
+in the name of ALLAH AMIGHTY 
+
+computer graphics 
+
+applications
+
+art and design 
+
+computer games
+
+architecture (buildings) and layout design
+
+movie industry
+
+science and art of communicating visually
+
+interdisciplinary:
+
+physics: light,color,behaviour modeling
+
+mathematics
+
+cs hardware
+
+cs software 
+
+
+arts
+
+related disciplines
+
+computer vision
+
+game devolopment
+
+augmented reality 
+
+image processing
+
+historicl apps
+
+-spacewars at MIT
+
+-pong for atarii
+
+display devices: 
+
+-cathode ray tube with raster-scan-display
+
+-liquid-crystal displays
+
+-light emitting diodes 
+
+-plasma displays
+
+-high definition
+
+graphics pipeline:
+
+model of objects->model of light onto objects->production of scene-view
+
+models: gemetric objects, mathematical (light reflection,cloth movement)
+
+definitions: 
+
+pixel: smallest graphical object that can be drawn on a screen
+
+resolution: number of rows and columns of pixels
+
+dpi: dots per inch, packing capabilities of pixels in 1 inch space by the screen
+
+pixel position: position of a pixel (row,col) with respect to screen coordinates
+
+clipping area: a rectangular view on the screen where an application can draw objects
+
+rendering:
+
+generation of an image object from a model
+
+models are constructed from geometric primitives (points, lines,polygons)
+
+all geometric primitives are created from vertices
+
+rendered image:
+
+rendered image object smallest unit is a pixel on screen
+
+all pixels information is stored in a region of memory known as bitplane, and bitplanes are stored in a region of memory known as framebuffer
+
+screen coordinate system:
+
+2d regular cartesian grid
+
+width x height giving resolution
+
+pixels at grid intersections
+
+origin (0,0) at upper left corner (platform convention) with reversed quadrants
+
+world view:
+
+origin (0,0) at center of window as default. normal quadrant convention followed 
+
+graphics programming api performs map world view coordinates to screen coordinates
+
+finding address of a pixel
+
+pixel position (x,y)
+
+framebuffer->byte array
+
+screen resolution->width,height
+
+pixel address in framebuffer->y*width+x
+
+meshes:
+
+triangular mesh vs quadrilateral mesh
+
+issues:
+
+quads vs triangles:
+
+drawing on a plane easy with triangles
+
+sub-division may not result in new vertices
+
+simplification by replacement of fine with coarse mesh
+
+keep geometry (vertices) and topology (faces) separate
+
+surfaces:
+
+polygon: 3 or more vertices,
+
+-convex polygon
+
+-concave polygon
+
+straight line topic !=
+
+circles:
+
+-centre
+
+-radius
+
+-circumference
+
+perimeter c=2pier
+
+known inputs: center point and radius 
+
+extensions to circles !=
+
+opengl:
+
+graphics programming
+
+two major players:
+
+-directx: powerful and properietary 
+
+-opengl: powerful and open 
+
+popular games: 
+
+-directx: farcry, fifa, gta, needforspeed, call  of duty
+
+-opengl: call of duty,doom 3,half-line,hitman,medal of honour,quake,counter-strike
+
+other api's
+
+-java2d and java3d
+
+-vulkan
+
+opengl:
+
+-computer graphics rendering api
+
+-primitives for nearly all 2d/3d operations
+
+-no commands for windowing tasks
+
+-vertex and polygons,camera manipulation,textures,lighting
+
+-originally written for c, but has separate binding for java,c++,perl,python e.t.c
+
+-software interface to graphics hardware
+
+userprogram<---->functions call/return data<--->opengl libraries<---->output/input<---->device access (via os)
+
+opengl history: !=
+
+function call categories:
+
+-primitive
+
+-attributes
+
+-viewing
+
+-tranformations
+
+-input and output with keyboard,mouse or other devices
+
+-accessing device and platform related data
+
+opengl components:
+
+-gl->graphics library
+
+-glu->opengl utility library (provides camera movement,image processing/transformations tools)
+
+-glut->opengl utilities toolkit: provides window managers, menus, callback to display() function (java uses awt/swing instead of glut)
+
+
